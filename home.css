@@ -1,0 +1,71 @@
+html {
+	text-align: center;
+}
+body {
+	margin: 0px;
+}
+h1 {
+	background-color: lightgrey;
+	font-size: 60px;
+	width: 60%;
+	margin: 0px auto 0px auto;
+	padding: 60px 10px 10px 10px;
+}
+table{
+	margin: 10px auto 10px auto;
+	border-collapse: collapse;
+}
+table tr:first-child td{
+	border-top: none;
+}
+table tr:last-child td{
+	border-bottom: none;
+}
+table tr td:first-child {
+	border-left: none;
+}
+table tr td:last-child {
+	border-right: none; 
+}
+.cell {
+	border: 5px solid black;
+	height: 120px;
+	width: 120px; 
+	text-align: center;
+	font-size: 60px;
+	cursor: pointer;
+}
+.playBoard.x .cell:not(.x):not(.o):hover::before {
+	color: lightgrey;
+}
+.playBoard.o .cell:not(.x):not(.o):hover::before {
+	color: lightgrey;
+}
+.cell.x,
+.cell.o {
+	cursor: not-allowed;
+}
+.cell.x::before,
+.playBoard.x .cell:not(.x):not(.o):hover::before {
+	content: 'X';
+}
+.cell.o::before,
+.playBoard.o .cell:not(.x):not(.o):hover::before {
+	content: 'O';
+}
+/* winning message styling*/
+.show {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: black;
+	opacity: 80%;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 60px;
+	display: flex;
+	flex-direction: column;
+}
