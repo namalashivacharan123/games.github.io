@@ -1,0 +1,100 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	background-color: lightblue;
+	padding: 0px 10px;
+}
+label {
+	margin: 10px auto 10px 0px;
+	font-size: 20px;
+	width: 50%;
+	color: brown;
+}
+#title h1{
+	margin-bottom: 20px;
+}
+#title {
+	font-size: 30px;
+	color:green;
+	text-align: center;
+}
+#container {
+	max-width: 800px;
+	width: 80%;
+	background: lightcoral;
+	margin: 10px auto;
+	padding: 30px;
+}
+.property {
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+}
+#form .property .inputBox {
+	width: 100%;
+	outline: none;
+	border: 0px;
+	font-size: 20px;
+	padding: 8px 10px;
+	border-radius: 5px;
+}
+#form .property .inputBox:focus,
+#form .property .customSelect:focus {
+	border: 2px solid green;
+}
+#form .property .customSelect {
+	width: 100%;
+	outline: none;
+	border: 0px;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 5px;
+	appearance: none;
+}
+#form .property p{
+	font-size: 20px;
+	color: brown;
+}
+#form .property .check {
+	width: 20px;
+	height: 20px;
+	position: relative;
+	display: block;
+}
+#form .property .check input[type="checkbox"] {
+	position: absolute;
+	margin-right: 8px;
+	top: 0px;
+	left: 0px;
+	opacity: 0px; 
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+#form .property .check input[type="checkbox"]:hover {
+	border: 2px;
+	border-color: solid green;
+}
+#container .property .button {
+	width: 100%;
+	border: 0px;
+	background-color: lightblue;
+	font-size: 20px;
+	padding: 10px;
+	color: brown;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#container .property .button:hover {
+	background-color: blue;
+	color: white;
+}
+@media (max-width: 640px) {
+	.property {
+		flex-direction: column;
+		align-items: initial;
+	}
+}
