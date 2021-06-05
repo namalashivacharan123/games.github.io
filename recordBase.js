@@ -13,7 +13,7 @@ var AudioContext = window.AudioContext || window.webkitAudioContext;
 var audioContext;
 
 if(navigator.mediaDevices.getUserMedia){
-    console.log('getUserMedia is not supported');
+    console.log('getUserMedia is supported');
 
     let onSuccess = (stream) => {
         console.log('onSuccess(stream)');
